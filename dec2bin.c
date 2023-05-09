@@ -1,9 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include <gpmgmt.h>
 
 //Binary to Decimal Converter
 int main(){
+    //Max int Value = 2147483647
     int n, i, buff=8;
     int* bin = malloc(buff * sizeof(int));
 
@@ -17,7 +19,7 @@ int main(){
     }
 
     if(bin == NULL || n<0){
-        printf("Errolf!!\nPlease retry, and check that you wrote a positive integer.");
+        printf("Errolf!!\nPlease retry, and check that you wrote a positive number.");
         return 0;
     }
     

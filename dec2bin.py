@@ -1,7 +1,7 @@
-from time import time
+from time import time_ns
 
 n=int(input("Give me a number: "))
-start=time()
+start=time_ns()
 bin=""
 
 if n==0:
@@ -12,4 +12,4 @@ while n>0:
     n//=2
     
 print(bin[::-1])
-print("\nTime taken:", time()-start)
+print(f"\nTime taken: {time_ns()-start}ns.")
